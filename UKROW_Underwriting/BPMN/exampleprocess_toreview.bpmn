@@ -5,9 +5,6 @@
     <bpmn:participant id="Participant_1pcjn0r" name="Search on System" processRef="Process_0k141yp" />
   </bpmn:collaboration>
   <bpmn:process id="Process_1" isExecutable="false">
-    <bpmn:startEvent id="StartEvent_1">
-      <bpmn:outgoing>SequenceFlow_19wqjd4</bpmn:outgoing>
-    </bpmn:startEvent>
     <bpmn:manualTask id="ManualTask_0ls3tif" name="Search for Policy on PAS 1">
       <bpmn:incoming>SequenceFlow_19wqjd4</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0kvod3p</bpmn:outgoing>
@@ -27,6 +24,9 @@
     <bpmn:endEvent id="EndEvent_0i4hd6m">
       <bpmn:incoming>SequenceFlow_0yr73n0</bpmn:incoming>
     </bpmn:endEvent>
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>SequenceFlow_19wqjd4</bpmn:outgoing>
+    </bpmn:startEvent>
   </bpmn:process>
   <bpmn:process id="Process_0k141yp">
     <bpmn:sequenceFlow id="SequenceFlow_14itno0" sourceRef="ExclusiveGateway_1q7my94" targetRef="Task_0j8ltxu" />
@@ -66,9 +66,9 @@
         <dc:Bounds x="177" y="85" width="724" height="209" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
-        <dc:Bounds x="227" y="165" width="36" height="36" />
+        <dc:Bounds x="247" y="165" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="200" y="201" width="90" height="20" />
+          <dc:Bounds x="220" y="201" width="90" height="20" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ManualTask_0ls3tif_di" bpmnElement="ManualTask_0ls3tif">
@@ -87,9 +87,7 @@
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_19wqjd4_di" bpmnElement="SequenceFlow_19wqjd4">
-        <di:waypoint xsi:type="dc:Point" x="263" y="183" />
-        <di:waypoint xsi:type="dc:Point" x="297" y="183" />
-        <di:waypoint xsi:type="dc:Point" x="297" y="183" />
+        <di:waypoint xsi:type="dc:Point" x="283" y="183" />
         <di:waypoint xsi:type="dc:Point" x="334" y="183" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="252" y="177" width="90" height="20" />
